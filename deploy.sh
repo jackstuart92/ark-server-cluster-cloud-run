@@ -27,7 +27,7 @@ IMAGE_NAME="gcr.io/${PROJECT_ID}/ark-server-${MAP_NAME}"
 gcloud run deploy "ark-server-${MAP_NAME}" \
   --image="${IMAGE_NAME}" \
   --platform="managed" \
-  --region="us-central1" \
+  --region="europe-west2" \
   --port="7777" \
   --cpu="2" \
   --memory="8Gi" \
