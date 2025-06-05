@@ -5,7 +5,7 @@ set -e
 
 # Load environment variables from .env file
 if [ -f .env ]; then
-  export $(cat .env | sed 's/#.*//g' | xargs)
+  . ./.env
 fi
 
 # Check if the map name is provided

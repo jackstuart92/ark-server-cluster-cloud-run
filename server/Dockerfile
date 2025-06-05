@@ -28,8 +28,9 @@ EXPOSE 27020/tcp
 WORKDIR /server
 
 # Start the server
-ARG SESSION_NAME
-ARG SERVER_PASSWORD
-ARG SERVER_ADMIN_PASSWORD
-ARG MAP
-CMD ["./ShooterGame/Binaries/Linux/ShooterGameServer", "${MAP}?listen?SessionName=${SESSION_NAME}?ServerPassword=${SERVER_PASSWORD}?ServerAdminPassword=${SERVER_ADMIN_PASSWORD}", "-nosteamclient", "-game", "-server", "-log"] 
+ENV SESSION_NAME="MyArkServer"
+ENV SERVER_PASSWORD="MyPassword"
+ENV SERVER_ADMIN_PASSWORD="MySecretAdminPassword"
+ENV MAP="TheIsland_WP"
+
+CMD exec ./ShooterGame/Binaries/Linux/ShooterGameServer "${MAP}?listen?SessionName=${SESSION_NAME}?ServerPassword=${SERVER_PASSWORD}?ServerAdminPassword=${SERVER_ADMIN_PASSWORD}" -nosteamclient -game -server -log 
