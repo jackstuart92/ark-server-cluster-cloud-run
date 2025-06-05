@@ -34,8 +34,8 @@ LOCAL_IMAGE_NAME="ark-server-local-${LOWERCASE_MAP_NAME}"
 echo "--- Starting Local Test for Map: ${MAP_NAME} ---"
 
 # --- Step 1: Build the Docker Image ---
-echo "Building Docker image (this may take a while as caching is disabled)..."
-docker build --no-cache -t ${LOCAL_IMAGE_NAME} ./server
+echo "Building Docker image..."
+docker build -t ${LOCAL_IMAGE_NAME} ./server
 echo "Image built and tagged as ${LOCAL_IMAGE_NAME}"
 
 # --- Step 2: Run the Docker Container ---
