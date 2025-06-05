@@ -4,9 +4,30 @@
 set -e
 
 # --- Configuration ---
-# Add the map names you want to deploy to this list.
+# Add the map names you want to deploy to this list by uncommenting them
+# or adding your own.
+#
+# Official Maps:
+# "TheIsland_WP"
+# "TheCenter_WP"
+# "ScorchedEarth_WP"
+# "Ragnarok_WP"
+# "Aberration_P"
+# "Extinction"
+# "Valguero_P"
+# "Genesis"
+# "CrystalIsles"
+# "Gen2"
+# "LostIsland"
+# "Fjordur"
+
 # Example: MAPS=("TheIsland_WP" "ScorchedEarth_WP" "Ragnarok_WP")
-MAPS=("TheIsland_WP" "ScorchedEarth_WP")
+MAPS=(
+    "TheIsland_WP"
+    "ScorchedEarth_WP"
+    "TheCenter_WP"
+)
+
 
 # --- Deployment Loop ---
 echo "Starting deployment for all maps..."
