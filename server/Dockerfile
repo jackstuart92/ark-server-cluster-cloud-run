@@ -23,6 +23,10 @@ RUN echo steam steam/question select "I AGREE" | debconf-set-selections && \
 RUN mkdir /server && \
     steamcmd +force_install_dir /server +login anonymous +app_update 2430930 validate +quit
 
+# --- DEBUGGING STEP ---
+# List the contents of the server directory to verify files and permissions.
+RUN ls -lR /server
+
 # Expose ports
 EXPOSE 7777/udp
 EXPOSE 27020/tcp
