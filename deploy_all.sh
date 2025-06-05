@@ -6,26 +6,33 @@ set -e
 # --- Configuration ---
 # Add the map names you want to deploy to this list.
 
-# Currently Available Maps for ARK: Survival Ascended:
-# "TheIsland_WP"
-# "ScorchedEarth_WP"
-# "TheCenter_WP"
+# ARK: Survival Ascended Map List (as of June 2025)
+# Note: Map names in-game may vary. This list uses common identifiers.
 
-# Upcoming Maps (server names are based on the original game and may change):
-# "Ragnarok_WP"
-# "Aberration_P"
+# --- Available Maps ---
+# "TheIsland"
+# "ScorchedEarth"
+# "TheCenter"
+# "Aberration"
 # "Extinction"
-# "Valguero_P"
+# "Astraeos" - The latest map
+
+# --- Upcoming Maps ---
+# "Ragnarok"
+# "Valguero"
 # "Genesis"
+# "Genesis2"
 # "CrystalIsles"
-# "Gen2"
 # "LostIsland"
 # "Fjordur"
 
 MAPS=(
-    "TheIsland_WP"
-    "ScorchedEarth_WP"
-    "TheCenter_WP"
+    "TheIsland"
+    "ScorchedEarth"
+    "TheCenter"
+    "Aberration"
+    "Extinction"
+    "Astraeos"
 )
 
 

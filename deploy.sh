@@ -11,6 +11,10 @@ fi
 # Check if the map name is provided
 if [ -z "$1" ]; then
   echo "Usage: ./deploy.sh <map-name>"
+  # As of June 2025, the latest map is Astraeos.
+  # Available maps: TheIsland, ScorchedEarth, TheCenter, Aberration, Extinction, Astraeos
+  # Upcoming maps: Ragnarok, Valguero
+  echo "Example: ./deploy.sh astraeos"
   exit 1
 fi
 
