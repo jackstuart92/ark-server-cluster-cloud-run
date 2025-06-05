@@ -32,6 +32,7 @@ gcloud run deploy "ark-server-${MAP_NAME}" \
   --cpu="2" \
   --memory="8Gi" \
   --no-allow-unauthenticated \
+  --min-instances=1 \
   --set-env-vars="SESSION_NAME=${SESSION_NAME},SERVER_PASSWORD=${SERVER_PASSWORD},SERVER_ADMIN_PASSWORD=${SERVER_ADMIN_PASSWORD},MAP=${MAP_NAME},CLUSTER_ID=${CLUSTER_ID}" \
   --volume name=shared-ark-data,gcs,bucket=${GCS_BUCKET_NAME} \
   --mount name=shared-ark-data,path=/server/ShooterGame/Saved/Cluster
