@@ -27,7 +27,8 @@ fi
 
 # Get the map name from the first argument
 MAP_NAME=$1
-LOCAL_IMAGE_NAME="ark-server-local-${MAP_NAME}"
+# Docker image tags must be lowercase, so we convert the map name.
+LOCAL_IMAGE_NAME="ark-server-local-${MAP_NAME,,}"
 
 echo "--- Starting Local Test for Map: ${MAP_NAME} ---"
 
