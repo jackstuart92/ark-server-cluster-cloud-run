@@ -37,4 +37,4 @@ ENV SERVER_ADMIN_PASSWORD="MySecretAdminPassword"
 ENV MAP="TheIsland_WP"
 ENV CLUSTER_ID="myarkcluster"
 
-CMD exec ./ShooterGame/Binaries/Linux/ShooterGameServer "${MAP}?listen?SessionName=${SESSION_NAME}?ServerPassword=${SERVER_PASSWORD}?ServerAdminPassword=${SERVER_ADMIN_PASSWORD}" -nosteamclient -game -server -log -clusterid=${CLUSTER_ID} 
+CMD exec ./ShooterGame/Binaries/Linux/ArkAscendedServer.sh "${MAP}?listen?SessionName=${SESSION_NAME}?ServerPassword=${SERVER_PASSWORD}?ServerAdminPassword=${SERVER_ADMIN_PASSWORD}" -nosteamclient -game -server -log -clusterid=${CLUSTER_ID} 
