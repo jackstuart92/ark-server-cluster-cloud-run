@@ -26,6 +26,9 @@ This project provides the necessary infrastructure to run a private ARK: Surviva
 2.  **Configure the environment:**
 
     -   Create a `.env` file based on the `.env.example` file and populate it with your desired server settings.
+    -   Create a Google Cloud Storage (GCS) bucket to store the shared cluster data.
+    -   Update the `GCS_BUCKET_NAME` in your `.env` file with the name of your bucket.
+    -   Set a unique `CLUSTER_ID` in your `.env` file.
 
 3.  **Build and deploy the servers:**
 
