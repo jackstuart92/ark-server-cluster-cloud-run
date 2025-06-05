@@ -16,7 +16,8 @@ RUN echo steam steam/question select "I AGREE" | debconf-set-selections && \
     add-apt-repository multiverse && \
     dpkg --add-architecture i386 && \
     apt-get update && \
-    apt-get install -y steamcmd
+    apt-get install -y steamcmd && \
+    ln -s /usr/games/steamcmd /usr/bin/steamcmd
 
 # Download ARK Server
 RUN mkdir /server && \
