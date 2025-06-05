@@ -31,7 +31,6 @@ WORKDIR /server
 ENV SESSION_NAME="MyArkServer"
 ENV SERVER_PASSWORD="MyPassword"
 ENV SERVER_ADMIN_PASSWORD="MySecretAdminPassword"
-# As of June 2025, the latest map is Astraeos
 ENV MAP="TheIsland_WP"
 ENV CLUSTER_ID="myarkcluster"
 
