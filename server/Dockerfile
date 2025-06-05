@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install SteamCMD
-RUN add-apt-repository multiverse && \
+RUN echo steam steam/question select "I AGREE" | debconf-set-selections && \
+    echo steam steam/license note '' | debconf-set-selections && \
+    add-apt-repository multiverse && \
     dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get install -y steamcmd
