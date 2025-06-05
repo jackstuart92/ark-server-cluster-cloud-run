@@ -33,6 +33,15 @@ This project provides the necessary infrastructure to run a private ARK: Surviva
 3.  **Build and deploy the servers:**
 
     -   Follow the instructions in the `docs/` directory to build the Docker images and deploy them to Google Cloud Run.
+    -   To deploy all maps defined in `deploy_all.sh`, run:
+        ```bash
+        bash ./deploy_all.sh
+        ```
+    -   To deploy a single map, run:
+        ```bash
+        bash ./build.sh <map-name>
+        bash ./deploy.sh <map-name>
+        ```
 
 ## Contributing
 
